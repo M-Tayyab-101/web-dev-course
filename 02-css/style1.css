@@ -1,0 +1,24 @@
+h1 {
+  color: blue;
+  font-size: 40px;
+  margin-bottom: 5px;
+}
+
+p {
+  color: gray;
+  font-size: 18px;
+  margin-top: 0;
+}
+
+ul {
+  background-color: lightyellow;
+  padding: 20px 40px;
+}
+
+button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  margin-top: 20px;
+}
