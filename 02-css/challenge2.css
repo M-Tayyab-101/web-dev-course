@@ -1,0 +1,23 @@
+h1{
+    text-align: center; 
+    color: darkgreen;
+    border-bottom:2px solid green;
+}
+#middle-p{
+    background-color: yellow;
+    font-weight: bold; 
+}
+.blue-btn{
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+}
+.red-btn{
+    background-color: red;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    margin: 10px;
+}
