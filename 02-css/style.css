@@ -1,0 +1,40 @@
+.box {
+  background-color: steelblue;
+  color: white;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  margin: 5px;
+}
+
+.no-flex {
+  background-color: lightyellow;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.with-flex {
+  display: flex;
+  background-color: lightyellow;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  background-color: lightyellow;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.flex-space {
+  display: flex;
+  justify-content: space-between;
+  background-color: lightyellow;
+  padding: 10px;
+  margin-bottom: 20px;
+}
