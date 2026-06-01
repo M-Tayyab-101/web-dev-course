@@ -1,0 +1,19 @@
+.parent{
+    background-color: darkslategray;
+    height: 60px;
+    justify-content: space-between;
+    display: flex;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.links{
+    display: flex;
+    align-items: center;
+}
+.links a{
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+}

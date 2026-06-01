@@ -79,7 +79,70 @@ cursor: pointer;      /* hand cursor, always use on buttons */
 - All visible content goes inside <body>
 - When linking CSS: href="style.css" must match the actual filename exactly
 
+## Flexbox
+
+### What is Flexbox?
+Flexbox is a layout tool. By default every div stacks vertically
+(one below the other). Flexbox makes them go side by side horizontally.
+
+### The golden rule
+display: flex always goes on the PARENT element.
+The children automatically arrange themselves.
+
+### Main properties on the parent
+display: flex;                  → activates flexbox
+flex-direction: row;            → side by side (default)
+flex-direction: column;         → back to top to bottom
+justify-content: flex-start;    → horizontal: push to left
+justify-content: center;        → horizontal: push to center
+justify-content: flex-end;      → horizontal: push to right
+justify-content: space-between; → horizontal: equal space between items
+justify-content: space-around;  → horizontal: equal space around items
+align-items: flex-start;        → vertical: push to top
+align-items: center;            → vertical: push to middle
+align-items: flex-end;          → vertical: push to bottom
+
+### Easy way to remember
+justify-content → horizontal (left and right)
+align-items     → vertical (up and down)
+
+### Centering something perfectly
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+This centers the child both horizontally and vertically.
+
+### margin: auto trick
+margin: 0 auto on a child pushes it to the center
+while other elements stay in their position.
+Useful for centering a group of links in a navbar.
+
+### Flex used twice pattern
+Any element can be a flex parent to its own children
+while also being a flex child of its parent.
+Example: a box that is positioned by parent flex,
+but also uses flex itself to center text inside it.
+
+### Descendant selector
+.links a { }
+This targets the a tag inside .links only.
+Not all a tags on the page — only ones inside .links.
+Very commonly used pattern.
+
+### Flexbox cheatsheet (bookmark this)
+https://flexbox.malven.co
+
+## My mistakes to remember
+- display: flex goes on the PARENT not the children
+- color on a parent div does not affect <a> tags inside it
+  you need to target .parent a { color: white; }
+- align-items on the links container is needed for
+  vertical centering of the links themselves
+
 ## Files I made
 - practice1.html + style1.css  → first CSS practice (tag selectors)
 - practice2.html + style2.css  → classes and IDs lesson
 - challenge2.html + challenge2.css → challenge (classes/IDs only)
+- challenge3.html + challenge3.css → flexbox navbar challenge
